@@ -16,9 +16,8 @@
 	<name>blog-app-api</name>
 	<description>This is backend api for blogging</description>
 	<properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-    </properties>
+        <maven.compiler.release>17</maven.compiler.release>
+</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -70,11 +69,6 @@
 			<scope>test</scope>
 		</dependency>
 		
-		<dependency>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-compiler-plugin</artifactId>
-    <version>4.0.0-beta-1</version>
-</dependency>
 		
 	</dependencies>
 	
