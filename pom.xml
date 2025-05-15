@@ -15,9 +15,10 @@
 	<packaging>war</packaging>
 	<name>blog-app-api</name>
 	<description>This is backend api for blogging</description>
-	<!--<properties>
-		<java.version>17</java.version>
-	</properties>-->
+	<properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -72,6 +73,15 @@
 
 	<build>
 		<plugins>
+                        <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>17</source>
+                    <target>17</target>
+                </configuration>
+            </plugin>
+			
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
@@ -84,14 +94,6 @@
 					</excludes>
 				</configuration>
 			</plugin>
-			
-			<plugin>    
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-            <source>17</source>
-            <target>17</target>
-        </configuration>
-    </plugin>
 		</plugins>
 	</build>
 
