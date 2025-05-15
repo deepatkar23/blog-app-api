@@ -15,9 +15,9 @@
 	<packaging>war</packaging>
 	<name>blog-app-api</name>
 	<description>This is backend api for blogging</description>
-	<!--<properties>
+	<properties>
 		<java.version>17</java.version>
-	</properties>-->
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
