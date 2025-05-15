@@ -15,9 +15,9 @@
 	<packaging>war</packaging>
 	<name>blog-app-api</name>
 	<description>This is backend api for blogging</description>
-	<properties>
+	<!--<properties>
 		<java.version>17</java.version>
-	</properties>
+	</properties>-->
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -88,8 +88,8 @@
 			<plugin>    
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-            <source>1.7</source>
-            <target>1.7</target>
+            <source>17</source>
+            <target>17</target>
         </configuration>
     </plugin>
 		</plugins>
